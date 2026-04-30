@@ -1,0 +1,245 @@
+/* ================================
+   Om Shrikant Shinde - Portfolio
+   Basic CSS Stylesheet
+   ================================ */
+
+
+/* This applies to the whole page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(111, 111, 197);
+  color: #333;
+}
+
+
+/* NAVIGATION BAR */
+.navbar {
+  background-color: #1a1a2e;
+  padding: 14px 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+/* When you hover over a nav link */
+.navbar a:hover {
+  color: #f0a500;
+}
+
+
+/* HOME / HERO SECTION */
+.home {
+  background-color: #1a1a2e;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* Profile photo */
+.photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #f0a500;
+  object-fit: cover;
+  margin-bottom: 20px;
+
+  /* If no photo is found, show a gray circle as placeholder */
+  background-color: #555;
+}
+
+.home h1 {
+  font-size: 38px;
+  margin: 10px 0;
+}
+
+.home h3 {
+  font-size: 20px;
+  color: #f0a500;
+  margin: 5px 0;
+}
+
+.home p {
+  font-size: 15px;
+  color: #ccc;
+}
+
+
+/* BUTTON STYLE */
+.btn {
+  background-color: #f0a500;
+  color: black;
+  padding: 10px 22px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #cc8c00;
+}
+
+
+/* SECTION - used for About, Skills, Projects, etc. */
+.section {
+  padding: 50px 80px;
+}
+
+/* Alternate section background color */
+.gray {
+  background-color: #f4f4f4;
+}
+
+/* Section heading */
+.section h2 {
+  font-size: 28px;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+
+/* TABLE - used in About and Contact */
+table {
+  border-collapse: collapse;
+  width: 60%;
+}
+
+table td {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+/* Every second row gets a light gray color */
+table tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+
+/* SKILL BARS */
+
+/* The gray background of the bar */
+.bar-bg {
+  background-color:blue;
+  height: 25px;
+  border-radius: 5px;
+  width: 60%;
+  margin-bottom: 12px;
+}
+
+/* The orange filled part of the bar */
+/* Width is set in HTML using style="width: XX%" */
+.bar {
+  background-color: #f0a500;
+  height: 25px;
+  border-radius: 5px;
+  color: black;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 25px;
+  padding-left: 8px;
+}
+
+
+/* PROJECT BOXES */
+.project-box {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 18px;
+  background-color: white;
+}
+
+.project-box h3 {
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+.project-box:hover {
+  border-color: #f0a500;
+}
+
+.project-box a {
+  color: #1a1a2e;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-box a:hover {
+  color: #f0a500;
+}
+
+
+/* CERTIFICATE TABLE */
+.cert-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cert-table th {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.cert-table td {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.cert-table tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.cert-table a {
+  color: #1a1a2e;
+  font-weight: bold;
+}
+
+
+/* CONTACT FORM */
+form input[type="te"],
+form input[type="email"],
+form textarea {
+  width: 45%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form label {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+/* FOOTER */
+.footer {
+  background-color: #1a1a2e;
+  color: #ccc;
+  text-align: center;
+  padding: 18px;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 4px 0;
+}
